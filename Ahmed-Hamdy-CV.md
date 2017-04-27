@@ -11,6 +11,8 @@ Computer and Communications Engineering <br>_Expected graduation year 2018_<br>
 
 ### Assembler for SIC/XE machine
  Main target of this project is to learn and use a new language in such a short amount of time. `Rust` is a systems programming language by `Mozilla` that provides C capabilities plus memory and thread safety guarantees 
+
+### Shixy the robot
 I was lucky to have such a cool internship at [TMentors](http://tmentors.com/) Writing software that controls a remotely operated robot using `C#` and `WPF`. I learned a lot about design patterns and clean software design through that year
 
 ### File server 
