@@ -5,7 +5,7 @@ Computer and Communications Engineering <br>_Expected graduation year 2018_<br>
 **Contacts** ahmedhamdyau@gmail.com **|** +201148424331
 
 ## Skills
-   C, C++, Rust, C#, Angular2 , Java, Android, Python, HTML, CSS, git, MySQL, Data structures, Linux, Design patterns
+   C, C++, Rust, C#, Angular2 , Java, Android, Python, git, Data structures, Linux
 
 ## Projects
 
@@ -13,7 +13,7 @@ Computer and Communications Engineering <br>_Expected graduation year 2018_<br>
  Main target of this project is to learn and use a new language in such a short amount of time. `Rust` is a systems programming language by `Mozilla` that provides C capabilities plus memory and thread safety guarantees 
 
 ### Shixy the robot
-I was lucky to have such a cool internship at [TMentors](http://tmentors.com/) Writing software that controls a remotely operated robot using `C#` and `WPF`. I learned a lot about design patterns and clean software design through that year
+I was lucky to have such a cool internship at [TMentors](http://tmentors.com/) Writing software that controls a remotely operated robot using `C#` and `WPF` and communicating with the `Arduino` that controlled the motors . I learned a lot about design patterns and clean software design through that year
 
 ### File server 
 Building a reliable protocol on top of UDP using `C++`, This was the final project for the Computer Networks course. I learned about modern `C++` and using its `std` library and its idioms such as RAII and move semantics. I chose `C++` as a language as I wanted to learn it through this period.
