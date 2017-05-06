@@ -5,7 +5,7 @@ Computer and Communications Engineering <br>_Expected graduation year 2018_<br>
 **Contacts** ahmedhamdyau@gmail.com **|** +201148424331
 
 ## Skills
-   C, C++, Rust, Java, Android, Python, git, Linux, C#, Angular2 , Machine learning, Intel 8051 micro controller, Keil
+   C, C++, Rust, Java, Android, Python, git, Linux, Machine learning, Intel 8051 micro controller, Keil, Arduino, C#, Angular2 
    
 ## Projects
 
