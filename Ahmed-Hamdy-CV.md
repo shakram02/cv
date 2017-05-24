@@ -1,28 +1,42 @@
 
 ## Ahmed Hamdy Mahmoud
 _3<sup>rd</sup> year student Faculty Of Engineering, Alexandria University_<br>
-Computer and Communications Engineering <br>_Expected graduation year 2018_<br>
+Computer and Communications Engineering <br>_Expected graduation year 2018_
+
 **Contacts** ahmedhamdyau@gmail.com **|** +201148424331
 
 ## Skills
-   C, C++, Rust, Java, Android, Python, git, Linux, Machine learning, Intel 8051 micro controller, Keil, Arduino, C#, Angular2 
+   Rust, C, C++, Kotlin, C#, Java, Python, git, Linux, Machine learning,  Angular2 
    
 ## Projects
 
-### Assembler for SIC/XE machine
- Main target of this project is to learn and use a new language in such a short amount of time. `Rust` is a systems programming language by `Mozilla` that provides C capabilities plus memory and thread safety guarantees 
+**Assembler for SIC/XE machine**
 
-### Shixy the robot
- At my internship at [TMentors](http://tmentors.com/) Writing software that controls a remotely operated robot using `C#` and `WPF` and communicating with the `Arduino` that controlled the motors.
+ Aiming to learn `Rust`, this program creates object code from input assembly file, it has unit tests, a robust error checks and modular design
 
-### File server 
-Building a reliable protocol on top of UDP using `C++`, This was the final project for the Computer Networks course. I learned about modern `C++` and using its `std` library and its idioms such as RAII and move semantics. I chose `C++` as a language as I wanted to learn it through this period.
+**Shixy the robot**
 
-### Event planning system for IEEE | AlexSB
-Aiming to learn `Angular2`, this project is used to organize the time slots for the volunteers in a given event, taking care of the collisions that might occur while allocating the volunteers.
+ At my internship at [TMentors](http://tmentors.com/) Writing software that controls a remotely operated robot using `C#` and `WPF` and communicating with the `Arduino` that controlled the motors. and then moved to `Xamarin` to control the robot from mobile phones
 
-### Arduino Network Manager
-Using `Java`, this project was created for a client to control a network of `Arduino`s, The program monitors the state of the `Arduino`s in the network and sends them commands that are received by sketches running on the `Arduino`s
+**File server**
+
+Using modern `C++`, I implemented GoBackN algorithm on top of UDP to make reliable file transfer, it could also server multiple clients each one on a separate thread.
+
+**Event planning system for IEEE | AlexSB**
+
+Using `Angular2`, this web app is used to organize the time slots for the volunteers in a given event and showing collisions between the time slots if they occur
+
+**Arduino Network Manager**
+
+Using `Java`, this project controls a network of `Arduino`s, The program monitors the state of the `Arduino`s in the network and sends and queries the state of them
+
+**SMS AdBlocker**
+
+Using `Kotlin` after Google announced its support for Android, this project aims to block annoying SMS Ads by the service providers and filter them away
+
+**Power Tray**
+
+Using `C#` I created this gadget when I was a windows user to change the power settings in a succinct manner directly from a task bar tray. This gadget was selected to be featured on [Softpedia](http://www.softpedia.com/get/System/OS-Enhancements/Power-Tray.shtml)
 
 ## Activities
 
@@ -33,9 +47,9 @@ Using `Java`, this project was created for a client to control a network of `Ard
 -   **Made In Alex Robotics Team** joined Minesweepers competitions and created a robot that was remotely operated using `Arduino` and nRF and sent data using serial to the `C#` program on pc
 -   **AIESEC** Worked with interns from other countries for a project to help orphans learn English and Math
 -   Member at Made In Alex robotics team
--   **Batch representative** 2015 – 2016 solving problems for the batch inside the campus
+-   **Batch representative** 2015 – 2016 solving problems for the batch 
 -   Arduino blogger on Hackster.io
 
-**Online profiles** [_GitHub_](https://github.com/shakram02) **|** [Hackster](https://www.hackster.io/shakram02/) **|** [_LinkedIn_](https://www.linkedin.com/in/ahmed-hamdy-4a0593a5) **|** [_Facebook_](https://www.facebook.com/AHMxPs)
+**Online profiles** [GitHub](https://github.com/shakram02) **|** [Hackster](https://www.hackster.io/shakram02/) **|** [LinkedIn](https://www.linkedin.com/in/ahmed-hamdy-4a0593a5) **|** [Facebook](https://www.facebook.com/AHMxPs)
 
 \pagenumbering{gobble}
