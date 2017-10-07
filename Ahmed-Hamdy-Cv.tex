@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\definecolor{AccentColor}{HTML}{007F00}
+\definecolor{LinkColor}{HTML}{0000EE}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    filecolor=magenta,      
+    urlcolor=LinkColor
+}
+\urlstyle{same}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+\geometry{margin=0.3in}		% Small margin
+\setcounter{secnumdepth}{0}	% Disable section numbers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1pt}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section{\color{AccentColor}{\textsc{#1}}}}
+
+% Personal entry
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} 
+        \begin{minipage}{\dimexpr\textwidth-3cm}
+        #2
+        \end{minipage}
+        \vspace{0.1mm}}    % Entry value	
+
+% Education Entry
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{AccentColor}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+% Project Entry
+\newcommand{\ProjectEntry}[3]{
+		\noindent \textbf{#1} \hfill      % Study
+		\noindent \textit{#2} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #3 % Description
+		\normalsize \par}
+
+% Work entry
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1}\hfill      % Jobname
+		\colorbox{AccentColor}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Ahmed Hamdy}
+\MySlogan{Software Engineer}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\PersonalEntry{Mail}{ahmedhamdyau@gmail.com}
+\noindent\hangindent=2em\hangafter=0\href{https://www.github.com/shakram02/}{GitHub @/shakram02} | 
+\href{https://www.hackster.io/shakram02}{Hackster @/shakram02} |  
+\href{https://www.linkedin.com/in/shakram02}{LinkedIn @/shakram02}.
+
+\textbf{Intro} I’m that kind of person who is a coding addict, loves SOLID code and feels joyful when making projects that mix embedded systems with computers. I started learning Arduino and robotics when I was 17 years old. Teaching is a blessing that gives me loads of sense of meaning. I put all  my personal projects are on GitHub
+
+%%% Education
+%%% ------------------------------------------------------------ %
+\NewPart{Education}
+
+\EducationEntry{Bsc. Computer and communication engineering}{Sep 2012- Jul 2018}{Alexandria University}{The program mainly focuses on Computer Science with courses on Algorithms, Data Structures, Operating Systems and so on. With some courses on hardware architecture and an embedded systems course.}
+\sepspace
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work Experience}{}
+\WorkEntry{Research Assistant}{Jun 2017 - Present}{Faculty of Engineering, Alexandria University}{Researching controller security in Software Defined Networks.}
+\sepspace
+
+\WorkEntry{Software Engineer}{2015 - 2016}{TMentors, Internship}{Designed and implemented a complete software system to control a tel-operated advertisement robot, using C\# and WPF technologies.}
+\sepspace
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+
+\SkillsEntry{Self taught}{\textsc{C/C++}, \textsc{Python}, \textsc{Java}, \textsc{C\#}, \textsc{Kotlin}, \textsc{Rust}, \textsc{Bash Scripting}, \textsc{System programming}, \textsc{Git}, \textsc{Linux}, \textsc{Socket Programming}, \textsc{Machine Learning}, \textsc{Latex}, \textsc{NodeJs}, \textsc{Angular2}}
+
+\SkillsEntry{College}{\textsc{C/C++ (basic)}, \textsc{Java (basic)}, \textsc{MCS51 and 8086}, \textsc{HTML}, \textsc{PHP}, \textsc{CSS} , \textsc{Matlab}}
+
+%%% Projects
+%%% ------------------------------------------------------------
+\NewPart{Projects}{}
+
+\ProjectEntry{Assembler}{}{Rust, Travis}{Assembler for SIC/XE source code that produces object file with extensive error checking With CI on Travis.}
+
+\ProjectEntry{File Server}{}{Modern C++}{Designed and implemented a protocol using \texttt{GoBackN} on top of UDP to enforce data integrity in file transfer.}
+
+\ProjectEntry{Bash Beautify VsCode extension}{}{NodeJs, Python, Gulp}{
+I created a NodeJs wrapper around a Python script that I found on-line that formats bash scripts (its author has his credits) and modified it a bit. Since an easy to use formatter didn't exist.}
+
+%%% Projects
+%%% ------------------------------------------------------------
+\NewPart{Community Activities}{}
+
+\begin{itemize}
+\item Computer Science and Robotics educator for mid/high school students at \href{https://www.facebook.com/ProtonsAlexSB/}{Protons (free program)} for 3 years - Arduino, C\# and Python
+\item Microsoft Student Partner 2015 – 2016 
+\item Volunteer instructor for C and Arduino courses, \href{http://alexsb.org/}{IEEE|AlexSB}
+\item Made in Alex Robotics team member ( competitions: IRC, Minesweepers )
+\item Former AIESEC member, Participated in receiving global interns in a charity program in Alex.
+\end{itemize}
+
+% ----------- This is the end...
+\end{document}
