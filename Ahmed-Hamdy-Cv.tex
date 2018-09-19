@@ -68,14 +68,9 @@
 		\textit{#1}}		       % Entry name (birth, address, etc.)
 		\hspace{1.5em} #2 \par}    % Entry value
 
-\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
-		\noindent\hangindent=2em\hangafter=0 % Indentation
-		\parbox{\spacebox}{        % Box to align text
-		\textit{#1}}			   % Entry name (birth, address, etc.)
-		\hspace{1.5em} 
-        \begin{minipage}{\dimexpr\textwidth-3cm}
-        #2
-        \end{minipage}
+\newcommand{\SkillsEntry}[1]{      % Same as \PersonalEntry
+		#1
+        \noindent\hangindent=3em\hangafter=0 % Indentation
         \vspace{0.1mm}}    % Entry value	
 
 % Education Entry
@@ -142,8 +137,7 @@
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
 
-
--\SkillsEntry{}{\textsc{Kotlin}, \textsc{Python}, \textsc{Java}, \textsc{C}, \textsc{Rust}, \textsc{Git}, \textsc{Arduino}, \textsc{Network Programming},\textsc{NodeJs}, \textsc{C\#}}
+\SkillsEntry{ \textsc{Kotlin}, \textsc{Python}, \textsc{Java}, \textsc{C}, \textsc{Rust}, \textsc{git}, \textsc{Arduino}, \textsc{Network Programming}, \textsc{NodeJs}, \textsc{C\#}}
 
 
 %%% Publications 
@@ -159,7 +153,7 @@
 \NewPart{Projects}{}
 
 All Projects are hosted on \href{https://www.github.com/shakram02/}{Github @/shakram02}. 
-\\
+
 \begin{itemize}
 
 \item \href{https://github.com/shakram02/Npuzzle-GUI}{N Puzzle} [Kotlin] N-Puzzle solver with a friendly GUI. Implements A*, BFS and DFS
