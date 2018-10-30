@@ -78,8 +78,8 @@
 		\noindent \textbf{#1} \hfill      % Study
 		\colorbox{AccentColor}{\color{White}#2} \par  % Duration
 		\noindent \textit{#3} \par        % School
-		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
-		\normalsize \par}
+		
+		}
 
 % Project Entry
 \newcommand{\ProjectEntry}[3]{
@@ -123,8 +123,10 @@
 %%% ------------------------------------------------------------ %
 \NewPart{Education}
 
-\EducationEntry{Bsc. Computer and Communications Engineering}{Sep 2013- Jul 2018}{Alexandria University}{The program mainly focuses on Computer Science with courses on Algorithms, Data Structures, Operating Systems and so on. With some courses on hardware architecture and an embedded systems course.}
-\sepspace
+\EducationEntry{Bsc. Computer and Communications Engineering}{Sep 2013- Jul 2018}{Alexandria University}{%
+}
+\EducationEntry{TOEFL iBT Score: 106}{October,2018 - October,2020}{}
+
 %%% Work experience
 %%% ------------------------------------------------------------
 \NewPart{Work Experience}{}
@@ -138,13 +140,18 @@
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
 
-\SkillsEntry{ \textsc{Kotlin}, \textsc{Python}, \textsc{Java}, \textsc{C}, \textsc{Rust}, \textsc{git}, \textsc{Arduino}, \textsc{Network Programming}, \textsc{NodeJs}, \textsc{C\#}}
+\SkillsEntry{ \textsc{Programming (Java, Python, C, Rust, Android)},  \textsc{git}, \textsc{Arduino}, \textsc{Socket Programming}, 
+\textsc{NodeJs}}
 
 
 %%% Publications 
 \NewPart{Publications}{}
 \ProjectEntry{Repoxy: Replication Proxy for Trustworthy SDN Controller Operation - IEEE TrustCom 2018}{}{
-	The 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications \href{https://ieeexplore.ieee.org/document/8455887/}{view}
+	Paper published in the 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications \href{https://ieeexplore.ieee.org/document/8455887/}{view}
+}
+\ProjectEntry{PI Floor: Portable Interactive Floor with High Resilience and Minimal Setup for Edutainment }{}{
+	Poster published in the 17th International Conference on Mobile and Ubiquitous Multimedia 
+	% \href{https://ieeexplore.ieee.org/document/8455887/}{view}
 }
 % \ProjectEntry{Security and Resilience for Network Traffic through Nature-Inspired Approaches - NCSR 2018}{}{}
 %%% Projects
@@ -155,12 +162,15 @@ All Projects are hosted on \href{https://www.github.com/shakram02/}{Github @/sha
 
 \begin{itemize}
 
+
 \item \href{https://github.com/shakram02/Npuzzle-GUI}{N Puzzle} [Kotlin] N-Puzzle solver with a friendly GUI. Implements A*, BFS and DFS
-\item \href{https://github.com/shakram02/Arslanino}{Arslanino} [Kotlin/Firmata/Sockets] Transfer Arduino input signals to Arduino over network.
+%\item \href{https://github.com/shakram02/Arslanino}{Arslanino} [Kotlin/Firmata/Sockets] Transfer Arduino input signals to Arduino over network.
 \item \href{https://github.com/shakram02/Lwa-Web}{Lwa} [Android + NodeJs + Arduino] Smart home lock using OneTimePasswords (OTP)
-\item \href{https://github.com/shakram02/EdGrid}{Ed Grid} [Android / Kotlin] Make education fun by projecting Multiple choice questions on real world.
+\item \href{https://github.com/shakram02/PiFloor}{Pi Floor} [Android / Kotlin] Make education fun by projecting Multiple choice questions on real world.
+\item \href{https://github.com/shakram02/Repoxy}{Repoxy} [Java / SDN] Software Defined Network (SDN) server to allow multiple controllers to manage switches
+
 %\item \href{https://github.com/shakram02/Prola-Client}{Prola} [Android / Kotlin] Don't buy barcode scanning hardware in shops, use Prola. Convert phones to barcode scanners, the server runs on the main PC to perform input.
-\item \href{https://github.com/alexsb-software/events-app}{Availability App} [Angular2] Role distribution for IEEE Members for event management \href{https://www.youtube.com/watch?v=ewxyfzxKQ8g}{Demo}.
+% \item \href{https://github.com/alexsb-software/events-app}{Availability App} [Angular2] Role distribution for IEEE Members for event management \href{https://www.youtube.com/watch?v=ewxyfzxKQ8g}{Demo}.
 \end{itemize}
 
 %%% Projects
