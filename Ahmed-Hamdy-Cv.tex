@@ -49,21 +49,21 @@
 %%% ------------------------------------------------------------
 \newlength{\spacebox}
 \settowidth{\spacebox}{8888888888}			% Box to align text
-\newcommand{\sepspace}{\vspace*{1pt}}		% Vertical space macro
+\newcommand{\sepspace}{\vspace{1pt}}		% Vertical space macro
 
 \newcommand{\MyName}[1]{ % Name
-		\huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\LARGE \usefont{OT1}{phv}{b}{n} #1
 		\par \normalsize \normalfont}
 		
 \newcommand{\MySlogan}[1]{ % Slogan (optional)
-		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\large \usefont{OT1}{phv}{m}{n} \textit{#1}
 		\par \normalsize \normalfont}
 
 \newcommand{\NewPart}[1]{\section{\color{AccentColor}{\textsc{#1}}}}
 
 % Personal entry
 \newcommand{\PersonalEntry}[2]{
-		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\noindent\hangindent=1em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
 		\textit{#1}}		       % Entry name (birth, address, etc.)
 		\hspace{1.5em} #2 \par}    % Entry value
@@ -99,12 +99,13 @@
 %%% Begin Document
 %%% ------------------------------------------------------------
 \begin{document}
+
 % you can upload a photo and include it here...
 %\begin{wrapfigure}{l}{0.5\textwidth}
 %	\vspace*{-2em}
 %		\includegraphics[width=0.15\textwidth]{photo}
 %\end{wrapfigure}
-
+% \twocolumn
 \MyName{Ahmed Hamdy}
 \MySlogan{Software Engineer}
 
@@ -114,10 +115,10 @@
 %%% ------------------------------------------------------------
 \PersonalEntry{Mail}{ahmedhamdyau@gmail.com}
 \PersonalEntry{Phone}{+201148424331}
-\noindent\hangindent=2em\hangafter=0\href{https://www.github.com/shakram02/}{GitHub @/shakram02} | 
-\href{https://www.hackster.io/shakram02}{Hackster @/shakram02} |  
-\href{https://www.linkedin.com/in/shakram02}{LinkedIn @/shakram02} | 
-\href{https://www.behance.net/shakram02}{Behance @/shakram02}.
+\noindent\hangindent=1em\hangafter=0
+\href{https://www.github.com/shakram02/}{GitHub @/shakram02} | 
+\href{https://www.hackster.io/shakram02}{Hackster @/shakram02} |
+\href{https://www.linkedin.com/in/shakram02}{LinkedIn @/shakram02} |\href{https://www.behance.net/shakram02}{Behance @/shakram02}.
 
 %%% Education
 %%% ------------------------------------------------------------ %
@@ -130,7 +131,7 @@
 %%% Work experience
 %%% ------------------------------------------------------------
 \NewPart{Experience}{}
-\WorkEntry{Research Assistant}{Jun 2017 - Present}{IoT \& Cyber security Lab, Faculty of Engineering}{Researching controller security in Software Defined Networks.}
+\WorkEntry{Researcher}{Jun 2017}{IoT \& Cyber security Lab, Faculty of Engineering}{Researching controller security in Software Defined Networks.}
 \sepspace
 
 \WorkEntry{Software Engineer}{October 2015 - August 2016}{TMentors, Internship}{Designed and implemented a software system to control a tel-operated advertisement robot, using C\# and WPF technologies.}
@@ -140,16 +141,17 @@
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
 
-\SkillsEntry{ \textsc{Programming (Java, Python, C, Rust, Android)},  \textsc{git}, \textsc{Arduino}, \textsc{Socket Programming}, 
-\textsc{NodeJs}}
+\SkillsEntry{ \textsc{C, Kotlin, Java, Python, Rust, Android}}
+\SkillsEntry{ \textsc{git}, \textsc{Linux}, \textsc{Network Programming}}
+\SkillsEntry{ \textsc{Arduino, Robotics}}
 
 
 %%% Publications 
 \NewPart{Publications}{}
-\ResearchEntry{Repoxy: Replication Proxy for Trustworthy SDN Controller Operation - IEEE TrustCom 2018}{Mohamed Azab}{Paper}{
+\ResearchEntry{Repoxy: Replication Proxy for Trustworthy SDN Controller Operation}{Mohamed Azab}{Paper}{
 	The 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications \href{https://ieeexplore.ieee.org/document/8455887/}{view}
 }
-\ResearchEntry{PI Floor: Portable Interactive Floor with High Resilience and Minimal Setup for Edutainment }{Shaimaa Lazem}{Poster}{
+\ResearchEntry{PI Floor: Portable Interactive Floor with High Resilience and Minimal Setup for Edutainment}{Shaimaa Lazem}{Poster}{
 	The 17th International Conference on Mobile and Ubiquitous Multimedia 
 	% \href{https://ieeexplore.ieee.org/document/8455887/}{view}
 }
@@ -158,8 +160,7 @@
 %%% ------------------------------------------------------------
 \NewPart{Projects}{}
 
-All Projects are hosted on \href{https://www.github.com/shakram02/}{Github @/shakram02}. You can find my small automation gadgets also.
-
+All Projects are hosted on \href{https://www.github.com/shakram02/}{Github @/shakram02}.
 \begin{itemize}
 
 
@@ -175,7 +176,7 @@ All Projects are hosted on \href{https://www.github.com/shakram02/}{Github @/sha
 
 %%% Projects
 %%% ------------------------------------------------------------
-\NewPart{Community Activities \& Voluntary Work}{}
+\NewPart{Volunteering Experience}{}
 
 \begin{itemize}
 \item Computer Science and Robotics educator for mid/high school students at \href{https://www.facebook.com/ProtonsAlexSB/}{Protons} - Python, Arduino
