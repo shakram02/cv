@@ -21,9 +21,9 @@
 	\textheight=700px                    % Saving trees ;-)
 \usepackage{url}
 
-\definecolor{AccentColor}{HTML}{15726A}
+\definecolor{AccentColor}{HTML}{15326A}
 \definecolor{LinkColor}{HTML}{0000EE}
-
+\usepackage{mdwlist}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -34,16 +34,22 @@
 
 \frenchspacing              % Better looking spacings after periods
 \pagestyle{empty}           % No pagenumbers/headers/footers
-\geometry{margin=0.3in}		% Small margin
+\geometry{margin=0.1in}		% Small margin
 \setcounter{secnumdepth}{0}	% Disable section numbers
-
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{0.0ex plus 0.0ex minus 0ex}{0ex plus 0ex}
+\titlespacing*{\subsection}
+{0pt}{0.0ex plus 0.0ex minus 0ex}{0ex plus 0ex}
+\titlespacing*{\subsubsection}
+{0pt}{0.0ex plus 0.0ex minus 0ex}{0ex plus 0ex}
 %%% Custom sectioning (sectsty package)
 %%% ------------------------------------------------------------
-\usepackage{sectsty}
+% \usepackage{sectsty}
 
-\sectionfont{%			            % Change font of \section command
-	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
-	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+% \sectionfont{%			            % Change font of \section command
+	% \usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	% \sectionrule{0pt}{0pt}{-5pt}{3pt}}
 
 %%% Macros
 %%% ------------------------------------------------------------
@@ -53,147 +59,86 @@
 
 \newcommand{\MyName}[1]{ % Name
 		\LARGE \usefont{OT1}{phv}{b}{n} #1
-		\par \normalsize \normalfont}
+		 \normalsize \normalfont}
 		
 \newcommand{\MySlogan}[1]{ % Slogan (optional)
 		\large \usefont{OT1}{phv}{m}{n} \textit{#1}
-		\par \normalsize \normalfont}
+		\normalsize \normalfont}
 
 \newcommand{\NewPart}[1]{\subsubsection{\color{AccentColor}{\textsc{#1}}}}
-
-% Personal entry
-\newcommand{\PersonalEntry}[2]{
-		\noindent\hangindent=1em\hangafter=0 % Indentation
-		\parbox{\spacebox}{        % Box to align text
-		\textit{#1}}		       % Entry name (birth, address, etc.)
-		\hspace{1.5em} #2}    % Entry value
-
-\newcommand{\SkillsEntry}[1]{      % Same as \PersonalEntry
-		#1
-        \noindent\hangindent=3em\hangafter=0 % Indentation
-        \vspace{0.1mm}}    % Entry value	
-
-% Education Entry
-\newcommand{\EducationEntry}[4]{
-		\noindent \textbf{#1} \hfill      % Study
-		\colorbox{AccentColor}{\color{White}#2} \par  % Duration
-		\noindent \textit{#3} \par        % School		
-		
-		}
-
-% Project Entry
-\newcommand{\ResearchEntry}[4]{
-		\noindent \textbf{#1} \\      % Study
-		\noindent Supervisor: \textit{#2} \hfill \textit{#3} \par         % School
-		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
-		\normalsize \par}
-
-% Work entry
-\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
-		\noindent \textbf{#1}\hfill      % Jobname
-		\colorbox{AccentColor}{\color{White}#2} \par  % Duration
-		\noindent \textit{#3} \par              % Company
-		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
-		\normalsize \par}
-
-%%% Begin Document
-%%% ------------------------------------------------------------
+\newcommand{\Colored}[1]{\color{AccentColor}{#1}}
+\newcommand{\BoldIt}[1]{\textbf{\textit{#1}}}
+\newcommand{\colorsubsec}[1]{\subsection{\color{AccentColor}{#1}}}
 \begin{document}
 
-% you can upload a photo and include it here...
-%\begin{wrapfigure}{l}{0.5\textwidth}
-%	\vspace*{-2em}
-%		\includegraphics[width=0.15\textwidth]{photo}
-%\end{wrapfigure}
-\noindent
 \MyName{Ahmed Hamdy Mahmoud}
-% \MySlogan{Software Engineer}
 
-\sepspace
+\large{\textbf{Software Engineer}}
 
-%%% Personal details
-%%% ------------------------------------------------------------
-\PersonalEntry{Mail}{ahmedhamdyau@gmail.com} | \PersonalEntry{Phone}{+201148424331}
+Mail \BoldIt{ahmedhamdyau@gmail.com} | Phone \BoldIt{+201148424331}
 
 
-\href{https://www.github.com/shakram02/}{GitHub @/shakram02} |
 \href{https://www.hackster.io/shakram02}{Hackster @/shakram02} |
-\href{https://stackoverflow.com/users/4422856/shakram02}{stackoverflow @/shakram02}
-\\
+\href{https://stackoverflow.com/users/4422856/shakram02}{stackoverflow @/shakram02} |
+\href{https://www.github.com/shakram02/}{GitHub @/shakram02 [All my projects are here]}
+\section{Experience}
 
-% \href{https://www.linkedin.com/in/shakram02}{LinkedIn @/shakram02} |
-% \href{https://www.behance.net/shakram02}{Behance @/shakram02}.
-\noindent
-% Learner, Computer Geek, Researcher, Engineer, Educator, Open Source lover, (Code \& Graphic) Designer and DIY Electronics maker.
-%%% Education
-%%% ------------------------------------------------------------ %
-\NewPart{Education}
+\colorsubsec{Graphmented, BADRIT (Now Incorta Inc.), Alexandria
+	\\ Software Engineer | November till 31st, December, 2018}
+\begin{itemize*}
+	\item Graphmented is an application to visualize data using AR Charts on iOS
+	\item Designed and developed features while keeping in mind OOD and SOLID principles
+	\item Self-learned how to use a Mac up to contributing using Swift + ARKit to production code in 8 working days
+\end{itemize*}
+% [Mohamed Azab, PhD - Ahmed Hamdy, Undergrad - Ahmed Mansour, MSc]
+\colorsubsec{Repoxy: Replication Proxy for Trustworthy SDN Controller Operation  \\ TrustCom 2018 - \href{https://github.com/shakram02/Repoxy}{Github} - \href{https://ieeexplore.ieee.org/document/8455887/}{IEEEXplore}}
 
-\EducationEntry{Bsc. Computer and Communications Engineering}{Sep 2013 - Jul 2018}{Alexandria University}{%
-}
-\EducationEntry{TOEFL iBT}{October, 2018}{Score:106}{%
-}
+\begin{itemize*}
+	\item This paper was oriented towards controller security in SDN using controller redundancy
+	\item The main contribution was enabling more than one controller to obtain the network state without knowing about the existence of each other, nor did the network know about the existence of the two controllers
+	\item Implementation required knowledge with the OpenFlow protocol besides packet manipulation and crafting. I also implemented an Ansible like software to automate testing across VMs
+\end{itemize*}
 
-%%% Experience
-%%% ------------------------------------------------------------
-\NewPart{Experience}{}
-%\WorkEntry{Researcher}{Jun 2017}{IoT \& Cyber security Lab in Faculty of Engineering [Independent, Unpaid]}{Security research for Software Defined Networks (SDN).}
-%\sepspace
-\WorkEntry{Software Engineer}{November, 2018}{BADRIT}{Team member in Graphmented | Using ARKit and SceneKit to make augmented reailty graphs\\}
+%  [Ahmed Hamdy, Grad - Yara Abdullatif, Undergrad - Shaimaa Lazem, PhD]
+\colorsubsec{PI Floor: Portable Interactive Floor with High Resilience and Minimal Setup for Edutainment \\ MUM18 - \href{https://github.com/shakram02/PiFloor}{Github} -
+	\href{https://dl.acm.org/citation.cfm?doid=3282894.3289734}{ACM DL}}
+\begin{itemize*}
+	\item The main contribution of this poster was enabling education in areas with little resources through making an Android app that used paper tiles to represent an interactive grid where students can solve MCQ questions as a game where they move on the tiles to select the answer
+	\item This project won the 1st place in ACM CAIRO CHI (Computer-Human Interaction) chapter's competition
+	\item The application utilized an embedded WebSockets and HTTP server, using Android vision and a VueJS app
+\end{itemize*}
 
-\WorkEntry{Intern Software Engineer}{October 2015 - August 2016}{TMentors}{Designed and implemented a software system to control a tel-operated advertisement robot, using C\# and WPF technologies.}
-%\sepspace
+\colorsubsec{Shixy, TMentors, Cairo - Intern Software Engineer - October 2015 to August 2016}
+\begin{itemize*}
+	\item Shixy is an advertisement robot that's operated through another endpoint in the network based on a Windows mini PC and Arduino
+	\item My role was to re-design and implement the solutions (C\#/WPF) on the pilot's PC and on the robot
+	\item The pilot's solution had a hardware joystick which I eventually replaced by a software one commands are sent over network to the robot's PC. The solution on the robot communicates with the Arduino which is responsible for the robot motion. It also featured image capturing and display
+	\item Through the internship I self learned design patterns, SOLID, WPF and Dependency Injection and used them in the implementation
+\end{itemize*}
+\subsubsection{Project: SIC/XE Assembler (Team of 3) \href{https://github.com/oddcoder/sickassembler}{GitHub}}
+\begin{itemize*}
+	\item Self-learned Rust language. Rust is a modern System development language by Mozilla. \href{https://www.rust-lang.org/}{rust-lang}
+	\item Rust is a mixed paradigm language that offers C++ power and automatic memory management at compile time through the Ownership model, which gives it an initial  learning curve
+	\item We followed code review system for each Pull Request and used Travis for automating our code testing and did extensive error checking for the input code files
 
-%%% Skills
-%%% ------------------------------------------------------------
-% \NewPart{Skills}{}
+\end{itemize*}
+\section{Certifications}
+\begin{itemize*}
+	\item Computer and Communications department, Faculty of Engineering, Alexandria University [Jul, 2018] %GPA: 3.09
+	\item TOEFL(IBT) [Oct, 2018] \BoldIt{Score: 106}
+\end{itemize*}
+\section{Languages and Technologies [Self-taught]}
+\begin{itemize*}
+	\item C++, Python, Arduino, Kotlin, Java, Rust, Android, Git, \LaTeX, Linux and NodeJs. Basic: Machine Learning
+\end{itemize*}
+\section{Extracurricular Activities}
 
-% \SkillsEntry{ \textsc{C, Kotlin, Python, Rust, Android}}
-% \SkillsEntry{ \textsc{git}, \textsc{Linux}}
-% \SkillsEntry{ \textsc{Arduino, Robotics}}
-
-
-%%% Publications 
-\NewPart{Publications}{}
-\ResearchEntry{Repoxy: Replication Proxy for Trustworthy SDN Controller Operation (Aug, 2018)}{Mohamed Azab, PhD}{Paper}{
-	The 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications (IEEE TrustCom-2018) \href{https://ieeexplore.ieee.org/document/8455887/}{view on IEEE Xplore}
-}
-\ResearchEntry{PI Floor: Portable Interactive Floor with High Resilience and Minimal Setup for Edutainment}{Shaimaa Lazem, PhD}{Poster}{
-	The 17th International Conference on Mobile and Ubiquitous Multimedia (MUM 2018) \href{https://dl.acm.org/citation.cfm?doid=3282894.3289734}{view on ACM DL}
-	% \href{https://ieeexplore.ieee.org/document/8455887/}{view}
-}
-% \ResearchEntry{Security and Resilience for Network Traffic through Nature-Inspired Approaches - NCSR 2018}{}{}
-%%% Projects
-%%% ------------------------------------------------------------
-\NewPart{Projects}{}
-\begin{itemize}
-	%\item \href{https://github.com/shakram02/Arslanino}{Arslanino} [Kotlin/Firmata/Sockets] Transfer Arduino input signals to Arduino over network.
-	\item \href{https://github.com/shakram02/Repoxy}{Repoxy} [OpenFlow, Low level socket I/O, OF Packet Fabrication] The first Software Defined Network (SDN) proxy to allow multiple controllers to manage OpenFlow switches
-	\item \href{https://github.com/shakram02/PiFloor}{Pi Floor} [Android, Client/Server, Web Sockets] Interactive floor application availing educational games in classroom setup.
-	      % \item \href{https://github.com/shakram02/Lwa-Web}{Lwa} [Android , NodeJs \& Arduino] Smart home lock using OneTimePasswords (OTP)
-	\item Arduino Controller [Arduino, Java, Client/Server] (Proprietary) This application Reads and Updates states of multiple Arduino devices in the same LAN to be used in an industrial setting.
-
-	\item \href{https://github.com/shakram02/Npuzzle-GUI}{N Puzzle} [AI Course | Kotlin] (College Project) N-Puzzle solver with a friendly GUI. Implements A*, BFS and DFS
-	\item \href{https://github.com/shakram02/Lwa-Web} {Lwa} [Android, NodeJs, Arduino] A Clone of Amazon lock. That combines mobile, web and Arduino platforms.
-
-	      %\item \href{https://github.com/shakram02/Prola-Client}{Prola} [Android / Kotlin] Don't buy barcode scanning hardware in shops, use Prola. Convert phones to barcode scanners, the server runs on the main PC to perform input.
-	\item \href{https://github.com/alexsb-software/events-app}{Availability App} [Angular2, UI Design] Working with software committee members, this software facilitates task distribution in IEEE AlexSB when managing student events. \href{https://www.youtube.com/watch?v=ewxyfzxKQ8g}{Demo}.
-\end{itemize}
-
-%%% Projects
-%%% ------------------------------------------------------------
-\NewPart{Extracurricular Activities}{}
-
-\begin{itemize}
-	\item AIESEC Exchange Participant, Children education project in Pontianak, Indonesia
-%	\item Researcher (student volunteer) in IoT and Cybersecurity lab, Faculty of Engineering, Alexandria University
-	\item Microsoft Student Partner 2015 – 2016
-	\item Software Committee member and course instructor (C, Arduino), IEEE Alexandria student branch
-	\item Computer Science and Robotics educator for mid/high school students at \href{https://www.facebook.com/ProtonsAlexSB/}{Protons} for 3 times.
-	      % \item Made in Alex Robotics team member (competitions: IRC, Minesweepers)
-	      %\item AIESEC member, Incoming global volunteer (IGV) committe; Project organization
-	\item I blog about electronics for hobbyists on Hackster.io. Making sure to deliver byte sized concepts in details.
-	\item Student volunteer at the 17th International Conference on Mobile and Ubiquitous Multimedia MUM18
-\end{itemize}
-% ----------- This is the end...
+\begin{itemize*}
+	\item IEEE | Student volunteer; Taught C, Arduino courses and I was an instructor for an educational program that teaches programming (C\#,Python) and Robotics (Arduino) to middle and high school students
+	\item Microsoft Student Partner | 2015 - 2016. On campus event planning
+	% \item Attended trainings by Microsoft employees in Cairo
+	\item MUM18 Organizing Student Volunteer with international volunteers and organization committee
+	\item AIESEC Exchange Participant; Educational project in Indonesia. Volunteers were from 10 different countries
+	% \item I blog about Arduino and IoT-ish projects on Hackster
+\end{itemize*}
 \end{document}
