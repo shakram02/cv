@@ -2,7 +2,7 @@
     h1, h2, h3, h4 {
         margin: 0;
         margin-top: 12px;
-        color: #2b63caff;
+        color: #00ADD8;
         font-weight: bold;
     }
     ul, ol {
@@ -12,41 +12,40 @@
     p {
         margin: 0;
     }
+    /* Visited link */
+    a:link {
+      color: #CE3262; /* Example: purple */
+    }
+
+    .work-location {
+        color: #5DC9E2
+    }
 </style>
 <h2> Ahmed Hamdy Mahmoud <sub>
 <sup style="color: #000; font-weight: normal">
 [ahmedhamdyau@gmail.com | 
 <a href="https://github.com/shakram02">GitHub</a>
-<a href="https://blog.shakram02.com/blog/">| Blog</a>
-<a href="https://linkedin.com/in/shakram02">| LinkedIn</a>
-]
+| <a href="https://blog.shakram02.com/blog/">Blog</a>
+| <a href="https://linkedin.com/in/shakram02">LinkedIn</a>]
 </sup>
 </sub></h2>
 
-**Master of Science, Computer Systems Engineering** | Kuala Lumpur, Malaysia  
-*Universiti Teknologi Malaysia (UTM)* | Sep 2020 – April 2022
-
-**Bachelor of Science, Computer & Communications Engineering** | Alexandria, Egypt  
-*Faculty of Engineering, Alexandria University* | Sep 2013 – Jul 2018
-
-### Experience
-
-**Backend Software Engineer** <small><a href="https://www.schoolvoice.com/">@Schoolvoice</a> UAE, Remote September 2024 – Present </small>
+**Backend Software Engineer** <small><a href="https://www.schoolvoice.com/">@Schoolvoice</a> <span class="work-location">UAE, Remote</span> September 2024 – Present </small>
 
 *Golang, SQL, GraphQL, Docker*
 
 - Developed Golang microservices using hexagonal architecture
 - Introduced and developed product metrics using Prometheus and Grafana
 - Improved customer satisfaction by tracking API latency and optimizing slowest requests, leading to 3x performance gains
-- Communicated with end users (Parents) to solve their issues
+- Communicated with end users (Parents) to solve and monitor backend issues while we had an OTP downtime.
 - Listened to school administrators in product meetings to capture their requirements
 - Collaborated with sales team. Attended product introduction with leads, standups and explaining how backend works so they can negotiate deals/integrations better
 - Built automation tools using Budibase for Customer Success team to manage daily operations, improving customer satisfaction and offloading the load from engineering team
 - Participated in hiring by head hunting candidates
-- Wrote user stories for a feature that is planned for migrateion to golang
+- Wrote user stories for a feature that is planned for migration to golang
 - Reached out to investors to help secure a funding round
 
-**Backend Software Engineer** <small><a href="https://waffyapp.com/">@Waffy</a> Saudi Arabia, Remote, June 2023 – July 2024</small>
+**Backend Software Engineer** <small><a href="https://waffyapp.com/">@Waffy</a> <span class="work-location">Saudi Arabia, Remote</span> June 2023 – July 2024</small>
 
 *Java/Spring, Microservices, Kafka, Kubernetes, Github Actions, Agile, Jira*
 
@@ -54,7 +53,7 @@
 - Lead code design conversations and wrote feature documentation using Excalidraw and Confluence
 - Automated configuration deployments to Kubernetes using Github Actions
 
-**Backend Software Engineer** <small> <a href="https://www.trella.app/">@Trella (YCombinator S19)</a> Egypt, Remote April 2022 – May 2023</small>
+**Backend Software Engineer** <small> <a href="https://www.trella.app/">@Trella (YCombinator S19)</a> <span class="work-location">Egypt, Remote</span> April 2022 – May 2023</small>
 
 *C#, ASP .Net Core, Microservices, Python, AWS, Git, Agile, Jira*
 
@@ -62,7 +61,7 @@
 - Owned a microservice to optimize truck-loads for Trella's largest clients like Amazon and Arma
 - Improved scheduling efficiency by more than 20% by collecting requirements directly from truck owners
 
-**Software Engineer** <small><a href="https://research.utm.my/cairo/">@cAIRo Lab UTM</a> Malaysia, Hybrid March 2021 – July 2023</small>
+**Software Engineer** <small><a href="https://research.utm.my/cairo/">@cAIRo Lab UTM</a> <span class="work-location">Malaysia, Hybrid</span> March 2021 – July 2023</small>
 
 *AWS, Python, React, Django, Docker, Github Actions*
 - Developed a Web App that allows users to upload and process workloads that are handled by AWS Batch
@@ -77,7 +76,15 @@
 - Collaborated with AWS Virtualization team to produce a PR that matches their coding standards
 
 **2. AdaCore, Accelerometer Driver Support for Micro:bit** | [PR](https://github.com/AdaCore/Ada_Drivers_Library/pull/380/files) | [Blog](https://www.hackster.io/shakram02/ada-accelerometer-driver-stable-nerve-game-1393b4) | *Ada*
-- Discovered a missing driver in Ada's framework for Microbit and decided to imeplement it for [Make with Ada challenge](https://www.hackster.io/contests/adacore3#category-841)
+- Discovered a missing driver in Ada's framework for Microbit and decided to implement it for [Make with Ada challenge](https://www.hackster.io/contests/adacore3#category-841)
+
+### Education
+
+**Master of Science, Computer Systems Engineering**<br/>
+*Universiti Teknologi Malaysia (UTM)* <span class="work-location">Kuala Lumpur, Malaysia</span> Sep 2020 – April 2022
+
+**Bachelor of Science, Computer & Communications Engineering**<br/>
+*Faculty of Engineering, Alexandria University* <span class="work-location">Alexandria, Egypt</span> Sep 2013 – Jul 2018
 
 ### Certifications / Courses
 
@@ -85,4 +92,4 @@
 
 **Y Combinator | Startup School** – Provides practical knowledge on building products, growth marketing, fundraising, and startup operations from industry-leading founders and investors.RetryClaude can make mistakes. Please double-check responses.
 
-**Product Mangement 101 | Bokra Academy** Product management fundamentals course by Mohamed Mahrous (Group Product Manager, Foodics)
+**Product Mangement 101 | Bokra Academy** Product management fundamentals (e.g. Customer needs, experiments / validation) course by Mohamed Mahrous (Group Product Manager, Foodics). 
